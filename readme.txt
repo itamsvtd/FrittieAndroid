@@ -1,0 +1,7 @@
+Duc Vu readme file
+My application is android application 
+  android:minSdkVersion="14"
+  android:targetSdkVersion="17" />
+The main file is main log
+I can implement my functions as I expected before Log In, Sign Up, Create new location, Search for location, search activities by date ( after get to location page), request or accept activity, create new activities also.
+I used cloudmine to receive, push database ;
