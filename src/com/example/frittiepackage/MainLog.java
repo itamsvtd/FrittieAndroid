@@ -8,6 +8,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+import asynctasks.LoginFacebook;
 
 import com.cloudmine.api.CMApiCredentials;
 import com.cloudmine.api.CMObject;
@@ -37,6 +38,8 @@ public class MainLog extends Activity {
 
 			@Override
 			public void onClick(View arg0) {
+				
+				Toast.makeText(getBaseContext(), "GOOOO1", Toast.LENGTH_LONG).show();
 
 				EditText userID = (EditText) findViewById(R.id.editText01);
 
@@ -104,5 +107,20 @@ public class MainLog extends Activity {
 			}
 
 		});
+		
+		Button loginfacebook = (Button) findViewById(R.id.Facebooklogin);
+		loginfacebook.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View arg0) {
+				Toast.makeText(getBaseContext(), "GOOOO2", Toast.LENGTH_LONG).show();
+				Intent intent = new Intent(MainLog.this, LoginFacebook2.class);
+				startActivity(intent);      
+				finish();
+
+			}
+
+		});
+		
 	}
 }

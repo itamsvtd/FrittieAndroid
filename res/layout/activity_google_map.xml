@@ -1,10 +1,20 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.google.android.maps.MapView
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/mapview1"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:clickable="true"
-    android:apiKey="AIzaSyAP27T-XdV9etw6ysUVGy60m0V9BHpq4zI"
-/>
-
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+ 
+    <TextView
+        android:id="@+id/tv_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+ 
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_location"
+        android:apiKey="D8:EF:D4:B4:45:07:54:3D:26:DC:26:6D:BD:32:93:EA:84:7F:5F:C0"
+        class="com.google.android.gms.maps.SupportMapFragment" />
+ 
+</RelativeLayout>

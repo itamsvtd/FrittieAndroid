@@ -47,13 +47,13 @@ public class TabTest extends Activity {
       
     	 
         	Tab tabActivity = actionBar.newTab();     
-            tabActivity.setText("NewActivity"); 
+            tabActivity.setText("Manage"); 
             tabActivity.setTabListener(new TabListener<Action>(this, "Activity", Action.class));
             //tabActivity.setIcon(R.drawable.activities); 
             actionBar.addTab(tabActivity); 
             
             Tab tabShowList = actionBar.newTab(); 
-            tabShowList.setText("ShowList"); 
+            tabShowList.setText("Explore"); 
             tabShowList.setTabListener(new TabListener<ShowList>(this, "ShowList", ShowList.class));
             //tabActivity.setIcon(R.drawable.activities); 
             actionBar.addTab(tabShowList); 
